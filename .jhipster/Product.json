@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "3",
+            "fieldValidateRulesMaxlength": "100"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "0",
+            "fieldValidateRulesMax": "100000"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180126032224",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "product",
+    "pagination": "no"
+}
